@@ -1,0 +1,222 @@
+Started GET "/" for 127.0.0.1 at 2018-05-30 01:20:48 +0200
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (23.7ms)
+Completed 500 Internal Server Error in 37ms
+
+
+  
+ActionView::Template::Error (Missing partial common/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/sari/rails_app/shorty/app/views"
+):
+     9:   </head>
+    10: 
+    11:   <body>
+    12:     <%= render 'common/header' %>
+    13:     <%= yield %>
+    14:   </body>
+    15: </html>
+  
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4124611072089360745_70298517853420'
+Started GET "/" for 127.0.0.1 at 2018-05-30 01:21:42 +0200
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (1.8ms)
+  Rendered common/_header.html.erb (0.3ms)
+Completed 200 OK in 9ms (Views: 7.6ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2018-05-30 01:21:42 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/shorten?utf8=%E2%9C%93&longUrl=http%3A%2F%2Fwww.test.com&commit=Get" for 127.0.0.1 at 2018-05-30 01:21:48 +0200
+Processing by UrlsController#shorten as HTML
+  Parameters: {"utf8"=>"✓", "longUrl"=>"http://www.test.com", "commit"=>"Get"}
+Unpermitted parameters: :utf8, :commit
+  Rendering urls/shorten.html.erb within layouts/application
+  Rendered urls/shorten.html.erb within layouts/application (0.4ms)
+  Rendered common/_header.html.erb (0.3ms)
+Completed 200 OK in 897ms (Views: 7.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2018-05-30 01:21:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-30 01:23:34 +0200
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (11.8ms)
+  Rendered common/_header.html.erb (0.3ms)
+Completed 200 OK in 20ms (Views: 18.7ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2018-05-30 01:23:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-30 01:24:10 +0200
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (1.5ms)
+  Rendered common/_header.html.erb (0.2ms)
+Completed 200 OK in 9ms (Views: 7.2ms)
+
+
+Started GET "/shorten?utf8=%E2%9C%93&longUrl=http%3A%2F%2Fwww.lar-metals.com%2F&commit=Get" for 127.0.0.1 at 2018-05-30 01:25:00 +0200
+Processing by UrlsController#shorten as HTML
+  Parameters: {"utf8"=>"✓", "longUrl"=>"http://www.lar-metals.com/", "commit"=>"Get"}
+Unpermitted parameters: :utf8, :commit
+  Rendering urls/shorten.html.erb within layouts/application
+  Rendered urls/shorten.html.erb within layouts/application (0.4ms)
+  Rendered common/_header.html.erb (0.4ms)
+Completed 200 OK in 538ms (Views: 8.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-30 01:25:12 +0200
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (1.5ms)
+  Rendered common/_header.html.erb (0.2ms)
+Completed 200 OK in 9ms (Views: 7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-30 01:35:18 +0200
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (12.7ms)
+  Rendered common/_header.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 19.4ms)
+
+
+Started GET "/shorten?utf8=%E2%9C%93&longUrl=http%3A%2F%2Fwww.test.com&commit=Get" for 127.0.0.1 at 2018-05-30 01:35:22 +0200
+Processing by UrlsController#shorten as HTML
+  Parameters: {"utf8"=>"✓", "longUrl"=>"http://www.test.com", "commit"=>"Get"}
+Unpermitted parameters: :utf8, :commit
+  Rendering urls/shorten.html.erb within layouts/application
+  Rendered urls/shorten.html.erb within layouts/application (0.4ms)
+  Rendered common/_header.html.erb (0.3ms)
+Completed 200 OK in 522ms (Views: 7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-30 01:35:28 +0200
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (1.3ms)
+  Rendered common/_header.html.erb (0.2ms)
+Completed 200 OK in 9ms (Views: 7.4ms)
+
+
+Started GET "/shorten?utf8=%E2%9C%93&longUrl=http%3Awww.test.com&commit=Get" for 127.0.0.1 at 2018-05-30 01:35:41 +0200
+Processing by UrlsController#shorten as HTML
+  Parameters: {"utf8"=>"✓", "longUrl"=>"http:www.test.com", "commit"=>"Get"}
+Unpermitted parameters: :utf8, :commit
+Redirected to http://localhost:3000/
+Completed 302 Found in 795ms
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-30 01:35:42 +0200
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (1.4ms)
+  Rendered common/_header.html.erb (0.3ms)
+Completed 200 OK in 9ms (Views: 7.5ms)
+
+
+Started GET "/shorten?utf8=%E2%9C%93&longUrl=http%3A%2F%2Fwww.lar-metals.com%2F&commit=Get" for 127.0.0.1 at 2018-05-30 01:35:49 +0200
+Processing by UrlsController#shorten as HTML
+  Parameters: {"utf8"=>"✓", "longUrl"=>"http://www.lar-metals.com/", "commit"=>"Get"}
+Unpermitted parameters: :utf8, :commit
+  Rendering urls/shorten.html.erb within layouts/application
+  Rendered urls/shorten.html.erb within layouts/application (0.4ms)
+  Rendered common/_header.html.erb (0.3ms)
+Completed 200 OK in 1211ms (Views: 7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-30 01:35:54 +0200
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (1.6ms)
+  Rendered common/_header.html.erb (0.2ms)
+Completed 200 OK in 9ms (Views: 7.7ms)
+
+

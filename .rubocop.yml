@@ -1,0 +1,11 @@
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/**/*'
+    - 'tmp/**/*'
+    - 'Rakefile'
+    - 'Gemfile'
+    - 'config/**/*'
+    - 'bin/**/*'
+    - 'app/mailers/application_mailer.rb'
+  TargetRubyVersion: 2.5

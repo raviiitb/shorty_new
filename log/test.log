@@ -1,0 +1,32 @@
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered urls/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 9ms (Views: 6.0ms)
+Processing by UrlsController#shorten as HTML
+  Parameters: {"longUrl"=>""}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UrlsController#shorten as HTML
+  Parameters: {"longUrl"=>"http://test.de/"}
+  Rendering urls/shorten.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered urls/shorten.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 0.6ms)
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered urls/index.html.erb within layouts/application (0.2ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 10ms (Views: 6.6ms)
+Processing by UrlsController#shorten as HTML
+  Parameters: {"longUrl"=>""}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UrlsController#shorten as HTML
+  Parameters: {"longUrl"=>"http://test.de/"}
+  Rendering urls/shorten.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered urls/shorten.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 0.5ms)

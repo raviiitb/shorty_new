@@ -1,0 +1,10 @@
+<%= flash[:alert] %><%# Shows the flash message in case of error %>
+<h1>Url Shortner</h1>
+<p>Please enter url you want to shorten.</p>
+
+<%# Form to get the full url from user %>
+<%= form_with method: :get, url: shorten_path, local: true do |f| %>
+  <%= f.label :long_url %>
+  <%= f.url_field :longUrl, required: true %>
+  <%= f.submit 'Get' %>
+<% end %>
