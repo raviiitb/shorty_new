@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## App purpose
+It shortens a long url. Visiting this short url will redirect to original url.
 
-Things you may want to cover:
 
-* Ruby version
+## Implementation
+I have used the Bitly service to shorten the url.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## UI
+On the home page, you can enter a long url in the given box and then click on Get button. It will navigate to a new page where you can see the shortened url of the given url. When you click on the short url, it will open the original url in a new tab. 
